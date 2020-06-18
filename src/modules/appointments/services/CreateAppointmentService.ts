@@ -3,7 +3,7 @@ import { startOfHour } from 'date-fns';
 import AppError from '@shared/errors/AppError';
 
 import Appointment from '../infra/typeorm/entities/Appointment';
-import IAppointmentsRepository from '../repositories/iAppointmentsRepository';
+import IAppointmentsRepository from '../repositories/IAppointmentsRepository';
 
 interface IRequest {
   provider_id: string;
@@ -28,8 +28,6 @@ class CreateAppointmentService {
       provider_id,
       date: appointmentDate,
     });
-
-    await this.appointmentsRepository.save(appointment);
 
     return appointment;
   }
