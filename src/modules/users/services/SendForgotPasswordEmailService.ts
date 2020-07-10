@@ -1,6 +1,6 @@
 import { injectable, inject } from 'tsyringe';
 import path from 'path';
-import 'dotenv/config';
+// import 'dotenv/config';
 
 import IMailProvider from '@shared/container/providers/MailProvider/models/IMailProvider';
 import AppError from '@shared/errors/AppError';
