@@ -18,7 +18,7 @@ interface IUploadConfig {
     disk: {};
     aws: {
       bucket: string;
-    }
+    };
   };
 }
 
@@ -43,7 +43,7 @@ export default {
   config: {
     disk: {},
     aws: {
-      bucket: 'app-gobarber-2';
-    }
+      bucket: 'app-gobarber-2',
+    },
   },
 } as IUploadConfig;
