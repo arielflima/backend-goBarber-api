@@ -52,7 +52,7 @@ jobs:
           script: cd ~/app/backend-goBarber-api |
             ./node_modules/.bin/typeorm migration:run
             
-      - name: Run migrations on Digital Ocean
+      - name: Restart node with PM2
         uses: appleboy/scp-action@master
         with:
           host: ${{ secrets.SSH_HOST }}
